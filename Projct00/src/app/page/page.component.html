@@ -1,3 +1,10 @@
+<div *ngIf="!loaded" id="spin">
+  <svg class="spinner" width="65px" height="65px" viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">
+    <circle class="path" fill="none" stroke-width="6" stroke-linecap="round" cx="33" cy="33" r="30"></circle>
+ </svg>
+</div>
+
+<div *ngIf="loaded">
 <div class="container">
   <div id="title">
     <img src="../../assets/title.png" alt="titolo" id="imgTitle" />
@@ -123,13 +130,13 @@
 
   <div id="videos">
     <div id="video1" class="videos">
-      <iframe width="300" height="600" src="https://www.youtube.com/embed/ms8h7eoiJCU" title="Cipolle di Tropea in agrodolce con aceto balsamico di Modena 🧅" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      <iframe src="https://www.youtube.com/embed/ms8h7eoiJCU" title="Cipolle di Tropea in agrodolce con aceto balsamico di Modena 🧅" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
     </div>
     <div id="video2" class="videos">
-      <iframe width="435" height="275" src="https://www.youtube-nocookie.com/embed/8hYuEr__cVg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      <iframe src="https://www.youtube-nocookie.com/embed/8hYuEr__cVg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
     </div>
     <div id="video3" class="videos">
-      <iframe width="300" height="600" src="https://www.youtube.com/embed/ALULUwZk0nc" title="Frittata di cipolle 🧅 #chefruben #cucinaconruben #scorzadilimone #chetevoimagna" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      <iframe src="https://www.youtube.com/embed/ALULUwZk0nc" title="Frittata di cipolle 🧅 #chefruben #cucinaconruben #scorzadilimone #chetevoimagna" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
     </div>
 
 
@@ -139,9 +146,9 @@
 
   <div id="twiceSection" class="d-flex justify-content-between">
     <div class="twoDiv">
-      <span class="twoTit">Organismo dei produttori</span>
+      <span class="twoTit" id="spanCons">Organismo dei produttori</span>
       <img
-        src="http://www.consorziocipollatropeaigp.com/images/loghi/logo-cipolla-rossa-di-tropea-igp-calabria.png"
+        src="../../assets/lop_cipolla_rossa_di_tropea_calabria.png"
         alt="logo consorzio cipolla tropea igp"
         id="imgConsorzio"
       />
@@ -193,5 +200,6 @@
   </div>
 
 </div>
-
+</div>
 <app-background></app-background>
+
